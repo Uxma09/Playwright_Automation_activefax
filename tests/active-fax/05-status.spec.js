@@ -1,0 +1,48 @@
+import { test, expect, describe } from './fixtures.js';
+
+describe('dateSearch', () => {
+  test('FacilityStatus', async ({ page }) => {
+  await page.locator('form').getByText('Status').click();
+  await page.waitForTimeout(300);
+  await page.getByRole('img').nth(2).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: 'CONFIRMED' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('img').nth(3).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: 'RESOLVED' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('img').nth(3).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: 'SPLIT' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('img').nth(3).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: 'FAILED' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('img').nth(3).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: 'REPLY' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('img').nth(3).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('checkbox', { name: '[ALL]' }).check();
+    await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Search' }).click();
+    await page.waitForTimeout(300);
+  await page.getByRole('button').nth(5).click();
+   await page.waitForTimeout(300);
+  await page.getByRole('button').nth(4).click();
+  await page.waitForTimeout(300);
+  });
+});
