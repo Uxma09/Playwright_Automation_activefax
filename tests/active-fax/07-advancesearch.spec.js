@@ -4,7 +4,7 @@ describe('Fax Listing Test Suite', () => {
   test('Advance Search', async ({ page }) => {
    await page.getByRole('button').nth(3).click();
   await page.getByRole('dialog').getByRole('textbox', { name: 'Select Date' }).click();
-  await page.getByRole('gridcell', { name: /March 11/ }).click();
+   await page.getByRole('gridcell', { name: 'Choose Wednesday, April 8th,' }).click();
   await page.locator('select[name="office"]').selectOption('2');
   await page.locator('.mb-3 > .rmsc > .dropdown-container > .dropdown-heading > .dropdown-heading-value').first().click();
   await page.getByRole('checkbox', { name: 'Johnson, Walter Mr' }).check();
