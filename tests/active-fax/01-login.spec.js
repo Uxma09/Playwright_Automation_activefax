@@ -5,7 +5,7 @@ describe('Login Test Suite', () => {
   // First test: Login and save authentication
   test('Login and Save Authentication', async ({ page, context }) => {
     console.log('Before navigation');
-    await page.goto('https://axdemo.healthwaresystems.com/login', { timeout: 50000 });
+    await page.goto('https://axdemo.healthwaresystems.com/login', { timeout: 120000 });
     console.log('After navigation:', await page.url());
     await page.waitForLoadState('networkidle');
     console.log('Network idle, page should be fully loaded');

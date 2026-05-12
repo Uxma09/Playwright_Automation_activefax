@@ -15,6 +15,9 @@ export const test = base.extend({
     await use(sharedContext);
   },
   page: async ({ context }, use) => {
+    if (!sharedPage || sharedPage.isClosed()) {
+      sharedPage = await sharedContext.newPage();
+    }
     await use(sharedPage);
   },
 });
