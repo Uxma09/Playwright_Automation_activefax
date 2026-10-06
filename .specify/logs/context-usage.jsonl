@@ -1,0 +1,1 @@
+{"timestamp":"2026-10-06T08:47:50.226Z","sessionId":"unknown","stage":"unknown","status":"healthy","tokensUsed":0,"tokensLimit":120000,"utilizationPercent":0,"breakdown":{"specArtifacts":0,"memories":0,"hints":0,"observations":0,"systemFiles":0,"conversation":0},"eventType":"health_check"}
